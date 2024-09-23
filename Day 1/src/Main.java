@@ -8,21 +8,21 @@ public class Main {
         System.out.println("-----Esercizio 1------");
         System.out.println("-----1.1------");
         System.out.println(Main.moltiplica(5, 10));
-        System.out.println("Esercizio 1.2");
+        System.out.println("-----1.2------");
         System.out.println(Main.concatena("ciao sono il numero ", 1));
-        System.out.println("Esercizio 1.3");
+        System.out.println("-----1.3------");
         System.out.println(Arrays.toString(Main.inserisciinArray(new String[]{"ciao", "a", "voi", "amici", "miei"}, "tutti")));
         System.out.println("-----Esercizio 2------");
         Main.backNForth();
         System.out.println("-----Esercizio 3------");
-        System.out.println("Esercizio 3.1");
+        System.out.println("-----3.1------");
         System.out.println("Inserisci la base");
         double x = tastiera.nextDouble();
         System.out.println("Inserisci l'altezza");
         double y = tastiera.nextDouble();
         double perimetro = Main.perimetroRettangolo(x,y);
         System.out.println(MessageFormat.format("Il perimetro di un rettangolo in base {0} cm e altezza {1} cm è di {2} cm",x,y,perimetro));
-        System.out.println("Esercizio 3.2");
+        System.out.println("-----3.2------");
         System.out.println("Inserisci un numero intero");
         int num = tastiera.nextInt();
         if(Main.pariDispari(num) == 0) {
@@ -30,7 +30,7 @@ public class Main {
         } else {
             System.out.println(MessageFormat.format("Il numero {0} è dispari",num));
         }
-        System.out.println("Esercizio 3.3");
+        System.out.println("-----3.3------");
         System.out.println("Inserisci il primo lato");
         double a = tastiera.nextDouble();
         System.out.println("Inserisci il secondo lato");
