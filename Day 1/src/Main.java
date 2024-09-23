@@ -7,7 +7,11 @@ public class Main {
         Scanner tastiera = new Scanner(System.in);
         System.out.println("-----Esercizio 1------");
         System.out.println("-----1.1------");
-        System.out.println(Main.moltiplica(5, 10));
+        System.out.println("Inserisci il primo numero da moltiplicare");
+        int num1 = tastiera.nextInt();
+        System.out.println("Inserisci il secondo numero da moltiplicare");
+        int num2 = tastiera.nextInt();
+        System.out.println(MessageFormat.format("Il prodotto tra {0} e {1} è {2}",num1,num2,Main.moltiplica(num1, num2)));
         System.out.println("-----1.2------");
         System.out.println(Main.concatena("Carmine", 31));
         System.out.println("-----1.3------");
