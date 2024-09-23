@@ -9,7 +9,7 @@ public class Main {
         System.out.println("-----1.1------");
         System.out.println(Main.moltiplica(5, 10));
         System.out.println("-----1.2------");
-        System.out.println(Main.concatena("ciao sono il numero ", 1));
+        System.out.println(Main.concatena("Carmine", 31));
         System.out.println("-----1.3------");
         System.out.println(Arrays.toString(Main.inserisciinArray(new String[]{"ciao", "a", "voi", "amici", "miei"}, "tutti")));
         System.out.println("-----Esercizio 2------");
@@ -45,8 +45,8 @@ public class Main {
     public static int moltiplica (int num1, int num2) {
         return num1 * num2;
     }
-    public static String concatena(String stringa, int num) {
-        return stringa + num;
+    public static String concatena(String name, int age) {
+        return "Ciao " + name + " di anni " + age;
     }
 
     public static String[] inserisciinArray(String[] array, String insert) {
