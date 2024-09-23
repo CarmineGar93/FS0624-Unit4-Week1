@@ -10,7 +10,7 @@ public class Main {
         System.out.println(Main.concatena("ciao sono il numero ", 1));
         System.out.println(Arrays.toString(Main.inserisciinArray(new String[]{"ciao", "a", "voi", "amici", "miei"}, "tutti")));
         System.out.println("-----Esercizio 2------");
-        /*Main.backNForth();*/
+        Main.backNForth();
         System.out.println("-----Esercizio 3------");
         System.out.println("Inserisci la base");
         double x = tastiera.nextDouble();
@@ -18,6 +18,13 @@ public class Main {
         double y = tastiera.nextDouble();
         double perimetro = Main.perimetroRettangolo(x,y);
         System.out.println(MessageFormat.format("Il perimetro di un rettangolo in base {0} cm e altezza {1} cm è di {2} cm",x,y,perimetro));
+        System.out.println("Inserisci un numero intero");
+        int num = tastiera.nextInt();
+        if(Main.pariDispari(num) == 0) {
+            System.out.println(MessageFormat.format("Il numero {0} è pari",num));
+        } else {
+            System.out.println(MessageFormat.format("Il numero {0} è dispari",num));
+        }
 
 
     }
@@ -43,12 +50,13 @@ public class Main {
         for (int i = 0; i < inputs.length; i++) {
             inputs[i] = tastiera.nextLine();
         }
-        String forward = "", backward = "";
+
+        StringBuilder forward = new StringBuilder(), backward = new StringBuilder();
         for (String s : inputs) {
-            forward += s + " ";
+            forward.append(s).append(" ");
         }
         for (int i = inputs.length-1; i >= 0; i--) {
-            backward += inputs[i] + " ";
+            backward.append(inputs[i]).append(" ");
         }
         System.out.println("La stringa concatenata è: " + forward);
         System.out.println("La stringa concatenata al contrario è: " + backward);
@@ -56,5 +64,9 @@ public class Main {
     }
     public static double perimetroRettangolo (double b, double h) {
         return (b + h) * 2;
+    }
+    public static short pariDispari(int num) {
+        if(num % 2 == 0) return 0;
+        else return 1;
     }
 }
