@@ -25,6 +25,14 @@ public class Main {
         } else {
             System.out.println(MessageFormat.format("Il numero {0} è dispari",num));
         }
+        System.out.println("Inserisci il primo lato");
+        double a = tastiera.nextDouble();
+        System.out.println("Inserisci il secondo lato");
+        double b = tastiera.nextDouble();
+        System.out.println("Inserisci il terzo lato");
+        double c = tastiera.nextDouble();
+        double area = Main.perimetroTriangolo(a,b,c);
+        System.out.println(MessageFormat.format("L area del triangolo di lati {0}, {1}, {2} cm è di {3} cm2", a, b, c, area));
 
 
     }
@@ -68,5 +76,9 @@ public class Main {
     public static short pariDispari(int num) {
         if(num % 2 == 0) return 0;
         else return 1;
+    }
+    public static double perimetroTriangolo(double a, double b, double c){
+        double sp = (a + b + c)/ 2;
+        return Math.sqrt (sp * (sp-a) * (sp-b) * (sp-c));
     }
 }
