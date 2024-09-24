@@ -29,6 +29,5 @@ public class Main {
         Esercizio3.addComma();
         System.out.println("---------Esercizio 4----------");
         Esercizio4.countdown();
-        sc.close();
     }
 }

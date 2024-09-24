@@ -13,6 +13,5 @@ public class Esercizio3 {
             String[] result = str.split("");
             System.out.println(String.join(",",result));
         }
-        sc.close();
     }
 }
