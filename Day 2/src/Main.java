@@ -1,4 +1,5 @@
 import If_Else.Esercizio1;
+import Switch.Esercizio2;
 
 import java.util.Scanner;
 
@@ -18,6 +19,10 @@ public class Main {
         boolean verifica2 = Esercizio1.annoBisestile(anno);
         if(verifica2) System.out.println("L'anno è bisestile");
         else System.out.println("L'anno non è bisestile");
+        System.out.println("---------Esercizio 2----------");
+        System.out.println("Inserisci un numero da 0 a 3");
+        int valore = sc.nextInt();
+        Esercizio2.intToString(valore);
 
     }
 }
