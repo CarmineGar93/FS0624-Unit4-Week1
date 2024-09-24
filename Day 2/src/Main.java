@@ -1,3 +1,4 @@
+import For.Esercizio4;
 import If_Else.Esercizio1;
 import Switch.Esercizio2;
 import While.Esercizio3;
@@ -9,7 +10,7 @@ public class Main {
         System.out.println("---------Esercizio 1----------");
         System.out.println("-------------1.1--------------");
         Scanner sc = new Scanner(System.in);
-        System.out.print("Inserisci una stringa per verificare se la sua lunghezza è pari o dispari");
+        System.out.println("Inserisci una stringa per verificare se la sua lunghezza è pari o dispari");
         String str = sc.nextLine();
         boolean verifica = Esercizio1.pariDispari(str);
         if(verifica) System.out.println("La stringa è pari");
@@ -24,7 +25,9 @@ public class Main {
         System.out.println("Inserisci un numero da 0 a 3");
         int valore = sc.nextInt();
         Esercizio2.intToString(valore);
+        System.out.println("---------Esercizio 3----------");
         Esercizio3.addComma();
-
+        System.out.println("---------Esercizio 4----------");
+        Esercizio4.countdown();
     }
 }
