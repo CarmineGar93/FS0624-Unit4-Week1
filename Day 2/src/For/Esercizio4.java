@@ -16,5 +16,6 @@ public class Esercizio4 {
             System.out.println("Riprova");
             countdown();
         }
+        sc.close();
     }
 }
