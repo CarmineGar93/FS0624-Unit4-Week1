@@ -12,6 +12,12 @@ public class Main {
         boolean verifica = Esercizio1.pariDispari(str);
         if(verifica) System.out.println("La stringa è pari");
         else System.out.println("La stringa è dispari");
+        System.out.println("-------------1.2--------------");
+        System.out.println("Inserisci un anno per verificare se è bisestile");
+        int anno = sc.nextInt();
+        boolean verifica2 = Esercizio1.annoBisestile(anno);
+        if(verifica2) System.out.println("L'anno è bisestile");
+        else System.out.println("L'anno non è bisestile");
 
     }
 }
