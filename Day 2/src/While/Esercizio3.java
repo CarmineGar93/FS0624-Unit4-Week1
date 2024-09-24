@@ -10,14 +10,8 @@ public class Esercizio3 {
             System.out.println("Inserisci una stringa, :q per terminare");
             String str = sc.nextLine();
             if(str.equals(":q")) break;
-            StringBuilder result = new StringBuilder();
-            for (int i = 0; i < str.length(); i++) {
-                result.append(str.charAt(i));
-                if(i < str.length() - 1){
-                    result.append(",");
-                }
-            }
-            System.out.println(result);
+            String[] result = str.split("");
+            System.out.println(String.join(",",result));
         }
     }
 }
