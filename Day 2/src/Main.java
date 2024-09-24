@@ -1,5 +1,6 @@
 import If_Else.Esercizio1;
 import Switch.Esercizio2;
+import While.Esercizio3;
 
 import java.util.Scanner;
 
@@ -23,6 +24,7 @@ public class Main {
         System.out.println("Inserisci un numero da 0 a 3");
         int valore = sc.nextInt();
         Esercizio2.intToString(valore);
+        Esercizio3.addComma();
 
     }
 }
