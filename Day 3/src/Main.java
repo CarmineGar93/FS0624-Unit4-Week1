@@ -23,5 +23,6 @@ public class Main {
         Sim tua = new Sim("3349612553");
         Sim.stampaDati(tua);
         tua.chiama(mia.getNr(), "10");
+        Sim.setNr(tua, "3345425197");
     }
 }
