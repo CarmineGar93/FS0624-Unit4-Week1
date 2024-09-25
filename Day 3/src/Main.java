@@ -20,5 +20,8 @@ public class Main {
         mia.chiama("3393327894", "35");
         mia.chiama("3339782335", "20");
         Sim.stampaDati(mia);
+        Sim tua = new Sim("3349612553");
+        Sim.stampaDati(tua);
+        tua.chiama(mia.getNr(), "10");
     }
 }
