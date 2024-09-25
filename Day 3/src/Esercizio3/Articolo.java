@@ -28,4 +28,7 @@ public class Articolo {
     public double getPrice() {
         return price;
     }
+    public String getDescription() {
+        return description;
+    }
 }

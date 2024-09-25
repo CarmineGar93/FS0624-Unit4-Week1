@@ -17,10 +17,22 @@ public class Carrello {
         return totale;
     }
 
+    public void mostraArticoli(){
+        Articolo[] array = this.articoli.toArray(new Articolo[0]);
+        if(array.length == 0){
+            System.out.println("Non ci sono articoli nel carrello");
+        } else {
+            for (int i = 0; i < array.length; i++) {
+                System.out.println(array[i].getDescription() + " - Qty: " + array[i].getPcs());
+            }
+        }
+    }
+
     public void addToCart(Articolo articolo){
         if(articolo.getPcs() > 0){
-            this.articoli.add(articolo);
-            this.totale += articolo.getPrice();
+            Articolo added = new Articolo(articolo.getDescription(),articolo.getPrice(),1);
+            this.articoli.add(added);
+            this.totale += added.getPrice();
             articolo.setPcs(articolo.getPcs() - 1);
         }
     }

@@ -1,9 +1,12 @@
 import Esercizio1.Rettangolo;
 import Esercizio2.Sim;
+import Esercizio3.Articolo;
+import Esercizio3.Carrello;
+import Esercizio3.Cliente;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("---------Esercizio 1----------");
+        /*System.out.println("---------Esercizio 1----------");
         System.out.println("-------------1.1--------------");
         Rettangolo r1 = new Rettangolo(2.5,4);
         Rettangolo r2 = new Rettangolo(5,5.4);
@@ -23,7 +26,16 @@ public class Main {
         Sim tua = new Sim("3349612553");
         Sim.stampaDati(tua);
         tua.chiama(mia.getNr(), "10");
-        Sim.setNr(tua, "3345425197");
+        Sim.setNr(tua, "3345425197");*/
         System.out.println("---------Esercizio 3----------");
+        Articolo tv = new Articolo("Televisore Lg", 500, 25);
+        Articolo tastiera = new Articolo("Tastiera Logitech", 100, 100);
+        Cliente io = new Cliente("Carmine Gargiulo", "ca@ca");
+        Carrello mioCarrello = new Carrello(io);
+        mioCarrello.addToCart(tv);
+        mioCarrello.addToCart(tastiera);
+        System.out.println("Totale carrello: " +  mioCarrello.getTotale());
+        mioCarrello.mostraArticoli();
+
     }
 }
