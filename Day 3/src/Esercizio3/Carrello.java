@@ -1,6 +1,7 @@
 package Esercizio3;
 
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class Carrello {
     private Cliente clienteAssociato;
@@ -15,6 +16,18 @@ public class Carrello {
 
     public double getTotale() {
         return totale;
+    }
+
+    private void setTotale(){
+        this.totale = 0;
+        Articolo[] array = this.articoli.toArray(new Articolo[0]);
+        if(array.length == 0){
+            this.totale = 0;
+        } else {
+            for (Articolo articolo : array) {
+                this.totale += articolo.getPrice() * articolo.getPcs();
+            }
+        }
     }
 
     public void mostraArticoli(){
@@ -35,8 +48,13 @@ public class Carrello {
         if(articolo.getPcs() > 0){
             Articolo added = new Articolo(articolo.getDescription(),articolo.getPrice(),qty);
             this.articoli.add(added);
-            this.totale += (added.getPrice() * qty);
+            this.setTotale();
             articolo.setPcs(articolo.getPcs() - qty);
         }
+    }
+
+    public void removeFromCart(Articolo articolo){
+        this.articoli.removeIf(articolo1 -> Objects.equals(articolo1.getDescription(), articolo.getDescription()));
+        this.setTotale();
     }
 }

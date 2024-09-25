@@ -35,6 +35,10 @@ public class Main {
         mioCarrello.addToCart(tv, 1);
         mioCarrello.addToCart(tastiera, 2);
         mioCarrello.mostraArticoli();
+        mioCarrello.removeFromCart(tastiera);
+        mioCarrello.mostraArticoli();
+       /* mioCarrello.removeFromCart(tv);
+        mioCarrello.mostraArticoli();*/
 
 
     }
