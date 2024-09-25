@@ -7,13 +7,18 @@ public class Sim {
     private String nr;
     private double credito;
     private ArrayList<String> chiamate;
-    private static double tariffa = 0.02;
+    private static final double tariffa = 0.02;
 
     public Sim(String nr){
         this.nr = nr;
         credito = 0;
         chiamate = new ArrayList<>();
     }
+
+    public static void setNr(Sim s1, String nr) {
+        s1.nr = nr;
+    }
+
     public static void stampaDati(Sim sim){
         System.out.println(MessageFormat.format("Il numero {0} ha credito: {1}", sim.nr,sim.credito));
         System.out.println("Le ultime chiamate del numero sono:");

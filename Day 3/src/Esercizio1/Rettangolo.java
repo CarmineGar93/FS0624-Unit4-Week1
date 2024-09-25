@@ -7,6 +7,15 @@ public class Rettangolo {
         this.base = base;
         this.altezza = altezza;
     }
+
+    public void setBase(double base) {
+        this.base = base;
+    }
+
+    public void setAltezza(double altezza) {
+        this.altezza = altezza;
+    }
+
     public double calculateP(){
         return (this.altezza + this.base) * 2;
     }

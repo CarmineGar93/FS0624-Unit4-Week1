@@ -10,6 +10,9 @@ public class Main {
         Rettangolo.print(r1);
         Rettangolo.print(r2);
         Rettangolo.print2(r1,r2);
+        r2.setBase(7);
+        r2.setAltezza(1.5);
+        Rettangolo.print(r2);
         System.out.println("---------Esercizio 2----------");
         Sim mia = new Sim("3393326197");
         Sim.stampaDati(mia);
