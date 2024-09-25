@@ -24,5 +24,6 @@ public class Main {
         Sim.stampaDati(tua);
         tua.chiama(mia.getNr(), "10");
         Sim.setNr(tua, "3345425197");
+        System.out.println("---------Esercizio 3----------");
     }
 }

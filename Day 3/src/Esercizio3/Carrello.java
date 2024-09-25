@@ -13,9 +13,15 @@ public class Carrello {
         totale = 0;
     }
 
+    public double getTotale() {
+        return totale;
+    }
+
     public void addToCart(Articolo articolo){
         if(articolo.getPcs() > 0){
-
+            this.articoli.add(articolo);
+            this.totale += articolo.getPrice();
+            articolo.setPcs(articolo.getPcs() - 1);
         }
     }
 }
