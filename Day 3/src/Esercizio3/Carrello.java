@@ -33,7 +33,7 @@ public class Carrello {
             Articolo added = new Articolo(articolo.getDescription(),articolo.getPrice(),qty);
             this.articoli.add(added);
             this.totale += (added.getPrice() * qty);
-            articolo.setPcs(articolo.getPcs() - 1);
+            articolo.setPcs(articolo.getPcs() - qty);
         }
     }
 }
