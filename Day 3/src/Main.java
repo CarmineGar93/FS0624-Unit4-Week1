@@ -6,7 +6,7 @@ import Esercizio3.Cliente;
 
 public class Main {
     public static void main(String[] args) {
-        /*System.out.println("---------Esercizio 1----------");
+        System.out.println("---------Esercizio 1----------");
         System.out.println("-------------1.1--------------");
         Rettangolo r1 = new Rettangolo(2.5,4);
         Rettangolo r2 = new Rettangolo(5,5.4);
@@ -26,7 +26,7 @@ public class Main {
         Sim tua = new Sim("3349612553");
         Sim.stampaDati(tua);
         tua.chiama(mia.getNr(), "10");
-        Sim.setNr(tua, "3345425197");*/
+        Sim.setNr(tua, "3345425197");
         System.out.println("---------Esercizio 3----------");
         Articolo tv = new Articolo("Televisore Lg", 500, 25);
         Articolo tastiera = new Articolo("Tastiera Logitech", 100, 100);
@@ -35,10 +35,8 @@ public class Main {
         mioCarrello.addToCart(tv, 1);
         mioCarrello.addToCart(tastiera, 2);
         mioCarrello.mostraArticoli();
-        mioCarrello.removeFromCart(tastiera);
+        mioCarrello.removeFromCart(tastiera, 1);
         mioCarrello.mostraArticoli();
-       /* mioCarrello.removeFromCart(tv);
-        mioCarrello.mostraArticoli();*/
 
 
     }
