@@ -34,8 +34,8 @@ public class Main {
         Carrello mioCarrello = new Carrello(io);
         mioCarrello.addToCart(tv, 1);
         mioCarrello.addToCart(tastiera, 2);
-        System.out.println("Totale carrello: " +  mioCarrello.getTotale());
         mioCarrello.mostraArticoli();
+
 
     }
 }

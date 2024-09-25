@@ -18,14 +18,17 @@ public class Carrello {
     }
 
     public void mostraArticoli(){
+        System.out.println("Carrello di " + this.clienteAssociato.getNomeCognome());
         Articolo[] array = this.articoli.toArray(new Articolo[0]);
         if(array.length == 0){
             System.out.println("Non ci sono articoli nel carrello");
         } else {
+            System.out.println("Articoli nel carrello: ");
             for (int i = 0; i < array.length; i++) {
                 System.out.println(array[i].getDescription() + " - Qty: " + array[i].getPcs());
             }
         }
+        System.out.println("Totale carrello: " + this.getTotale());
     }
 
     public void addToCart(Articolo articolo, int qty){
