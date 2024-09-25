@@ -28,11 +28,11 @@ public class Carrello {
         }
     }
 
-    public void addToCart(Articolo articolo){
+    public void addToCart(Articolo articolo, int qty){
         if(articolo.getPcs() > 0){
-            Articolo added = new Articolo(articolo.getDescription(),articolo.getPrice(),1);
+            Articolo added = new Articolo(articolo.getDescription(),articolo.getPrice(),qty);
             this.articoli.add(added);
-            this.totale += added.getPrice();
+            this.totale += (added.getPrice() * qty);
             articolo.setPcs(articolo.getPcs() - 1);
         }
     }

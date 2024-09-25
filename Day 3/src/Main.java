@@ -32,8 +32,8 @@ public class Main {
         Articolo tastiera = new Articolo("Tastiera Logitech", 100, 100);
         Cliente io = new Cliente("Carmine Gargiulo", "ca@ca");
         Carrello mioCarrello = new Carrello(io);
-        mioCarrello.addToCart(tv);
-        mioCarrello.addToCart(tastiera);
+        mioCarrello.addToCart(tv, 1);
+        mioCarrello.addToCart(tastiera, 2);
         System.out.println("Totale carrello: " +  mioCarrello.getTotale());
         mioCarrello.mostraArticoli();
 
