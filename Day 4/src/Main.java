@@ -24,7 +24,6 @@ public class Main {
         DipendenteFullTime fullVen = new DipendenteFullTime(Dipartimento.VENDITE);
         DipendentePartTime partAmm = new DipendentePartTime(Dipartimento.AMMINISTRAZIONE, 40);
         DipendentePartTime partPro = new DipendentePartTime(Dipartimento.PRODUZIONE, 30);
-        System.out.println(partPro);
         ArrayList<Dipendente2> dipendenti2 = new ArrayList<>();
         dipendenti2.add(dirAmm);
         dipendenti2.add(dirVen);
