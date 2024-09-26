@@ -2,6 +2,9 @@ package Esercizio2;
 
 import Esercizio1.Dipartimento;
 
+import java.math.BigDecimal;
+import java.math.RoundingMode;
+
 public class DipendentePartTime  extends Dipendente2{
     private int ore;
     public DipendentePartTime(Dipartimento dipartimento, int ore) {
@@ -11,11 +14,14 @@ public class DipendentePartTime  extends Dipendente2{
     }
 
     public double calculateSalary() {
-        return switch (this.getDipartimento()) {
-            case PRODUZIONE -> 1200 * ((double) this.ore /66);
-            case AMMINISTRAZIONE -> 2500 * ((double) this.ore /66);
-            case VENDITE -> 1800 * ((double) this.ore /66);
+        double result = 0;
+        switch (this.getDipartimento()) {
+            case PRODUZIONE -> result = 1200 * ((double) this.ore /66);
+            case AMMINISTRAZIONE -> result = 2500 * ((double) this.ore /66);
+            case VENDITE -> result = 1800 * ((double) this.ore /66);
         };
+        BigDecimal bd = new BigDecimal(result).setScale(2, RoundingMode.HALF_UP);
+        return bd.doubleValue();
     }
 
     @Override
