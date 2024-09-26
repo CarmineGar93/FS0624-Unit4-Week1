@@ -22,7 +22,7 @@ public class DipendentePartTime  extends Dipendente2{
 
     @Override
     public String toString() {
-        return "Il lavoratore part-time" + super.toString() + ", lavorando " + this.ore + " ore alla settimana";
+        return "Il dipendente part-time" + super.toString() + ", lavorando " + this.ore + " ore alla settimana";
     }
 
     @Override

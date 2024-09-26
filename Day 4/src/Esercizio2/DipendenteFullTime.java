@@ -13,7 +13,7 @@ public class DipendenteFullTime extends Dipendente2 {
 
     @Override
     public String toString() {
-        return "Il lavoratore full-time" + super.toString();
+        return "Il dipendente full-time" + super.toString();
     }
 
     @Override
