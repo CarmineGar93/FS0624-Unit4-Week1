@@ -17,4 +17,9 @@ public class DipendenteFullTime extends Dipendente2 {
             case VENDITE -> 1800;
         };
     }
+
+    @Override
+    public String toString() {
+        return "Il lavoratore full-time" + super.toString();
+    }
 }

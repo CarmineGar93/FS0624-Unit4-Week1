@@ -36,11 +36,7 @@ public abstract class Dipendente2 {
 
     @Override
     public String toString() {
-        return "Dipendente{" +
-                "matricola='" + matricola + '\'' +
-                ", stipendio=" + stipendio +
-                ", dipartimento=" + dipartimento +
-                '}';
+        return " matricola " + this.matricola + ", del settore " + this.dipartimento + " guadagna " + this.stipendio + " Euro al mese";
     }
 
     private static String generateRandomString(){

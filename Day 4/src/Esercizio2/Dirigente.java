@@ -16,4 +16,9 @@ public class Dirigente extends Dipendente2{
             case VENDITE -> 4000;
         };
     }
+
+    @Override
+    public String toString() {
+        return "Il dirigente" + super.toString();
+    }
 }

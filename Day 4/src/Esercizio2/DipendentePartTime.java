@@ -14,9 +14,14 @@ public class DipendentePartTime  extends Dipendente2{
 
     public double calculateSalary(int ore) {
         return switch (this.getDipartimento()) {
-            case PRODUZIONE -> 1200 * (((double) 66 /100) * ore);
-            case AMMINISTRAZIONE -> 2500 * (((double) 66 /100) * ore);
-            case VENDITE -> 1800 * (((double) 66 /100) * ore);
+            case PRODUZIONE -> 1200 * ((double) ore /66);
+            case AMMINISTRAZIONE -> 2500 * ((double) ore /66);
+            case VENDITE -> 1800 * ((double) ore /66);
         };
+    }
+
+    @Override
+    public String toString() {
+        return "Il lavoratore part-time" + super.toString();
     }
 }
