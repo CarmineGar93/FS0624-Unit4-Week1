@@ -1,3 +1,5 @@
+package Esercizio1;
+
 import java.util.Random;
 
 public class Dipendente {
@@ -29,7 +31,7 @@ public class Dipendente {
 
     @Override
     public String toString() {
-        return "Dipendente{" +
+        return "Esercizio1.Dipendente{" +
                 "matricola='" + matricola + '\'' +
                 ", stipendio=" + stipendio +
                 ", dipartimento=" + dipartimento +
