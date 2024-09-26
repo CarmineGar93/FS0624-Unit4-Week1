@@ -1,14 +1,15 @@
 package Esercizio2;
 
+import Esercizio1.Dipartimento;
+
 import java.util.Random;
 
-public class Dipendente {
+public abstract class Dipendente2 {
     private String matricola;
-    private double stipendio;
+    protected double stipendio;
     private Dipartimento dipartimento;
 
-    public Dipendente(double stipendio, Dipartimento dipartimento) {
-        this.stipendio = stipendio;
+    public Dipendente2(Dipartimento dipartimento) {
         this.dipartimento = dipartimento;
         this.matricola = generateRandomString();
     }
@@ -29,9 +30,13 @@ public class Dipendente {
         this.dipartimento = dipartimento;
     }
 
+    public double calculateSalary(){
+        return 0;
+    }
+
     @Override
     public String toString() {
-        return "Esercizio1.Dipendente{" +
+        return "Dipendente{" +
                 "matricola='" + matricola + '\'' +
                 ", stipendio=" + stipendio +
                 ", dipartimento=" + dipartimento +
