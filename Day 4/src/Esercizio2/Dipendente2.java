@@ -8,6 +8,7 @@ public abstract class Dipendente2 implements Lavoratori {
     private String matricola;
     protected double stipendio;
     private Dipartimento dipartimento;
+    private int rate = 1;
 
     public Dipendente2(Dipartimento dipartimento) {
         this.dipartimento = dipartimento;
@@ -30,9 +31,7 @@ public abstract class Dipendente2 implements Lavoratori {
         this.dipartimento = dipartimento;
     }
 
-    public double calculateSalary(){
-        return this.stipendio;
-    }
+    public abstract double calculateSalary();
 
     @Override
     public String toString() {
