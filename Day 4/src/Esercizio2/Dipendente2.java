@@ -48,7 +48,7 @@ public abstract class Dipendente2 implements Lavoratori {
         return " matricola " + this.matricola + ", del settore " + this.dipartimento + " guadagna " + this.stipendio + " Euro al mese";
     }
 
-    private static String generateRandomString(){
+    private String generateRandomString(){
         String characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
         Random random = new Random();
         StringBuilder stringBuilder = new StringBuilder();

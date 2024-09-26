@@ -38,5 +38,6 @@ public class Volontario implements Lavoratori{
     @Override
     public void checkin() {
         System.out.println("Da volontario inizio a lavorare alle 10.00");
+
     }
 }
