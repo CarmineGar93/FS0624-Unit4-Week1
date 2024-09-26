@@ -8,11 +8,15 @@ public abstract class Dipendente2 implements Lavoratori {
     private String matricola;
     protected double stipendio;
     private Dipartimento dipartimento;
-    private int rate = 1;
+    private double rate = 1;
 
     public Dipendente2(Dipartimento dipartimento) {
         this.dipartimento = dipartimento;
         this.matricola = generateRandomString();
+    }
+
+    public void setRate(double rate) {
+        this.rate = rate;
     }
 
     public String getMatricola() {
@@ -31,7 +35,13 @@ public abstract class Dipendente2 implements Lavoratori {
         this.dipartimento = dipartimento;
     }
 
-    public abstract double calculateSalary();
+    public double calculateSalary(){
+        return switch (this.getDipartimento()){
+            case PRODUZIONE -> 1000 * this.rate;
+            case AMMINISTRAZIONE -> 1800 * this.rate;
+            case VENDITE -> 1200 * this.rate;
+        };
+    }
 
     @Override
     public String toString() {
