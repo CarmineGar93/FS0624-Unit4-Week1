@@ -5,7 +5,7 @@ import Esercizio1.Dipartimento;
 import java.util.Random;
 
 public abstract class Dipendente2 implements Lavoratori {
-    private String matricola;
+    private final String matricola;
     protected double stipendio;
     private Dipartimento dipartimento;
     private double rate = 1;
