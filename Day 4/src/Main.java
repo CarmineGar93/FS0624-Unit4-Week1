@@ -40,6 +40,18 @@ public class Main {
         System.out.println("Il totale del salario dei dipendenti è di: " + tot + " Euro");
         System.out.println("---------Esercizio 3----------");
         Volontario vol1 = new Volontario("Mario Rossi", 18,"studente");
-        /*Volontario vol2 = new Volontario()*/
+        Volontario vol2 = new Volontario("Giuseppe Verdi", 25, "esperienza");
+        ArrayList<Lavoratori> lavoratori = new ArrayList<>();
+        lavoratori.add(dirAmm);
+        lavoratori.add(dirVen);
+        lavoratori.add(fullPro);
+        lavoratori.add(fullVen);
+        lavoratori.add(partPro);
+        lavoratori.add(partAmm);
+        lavoratori.add(vol1);
+        lavoratori.add(vol2);
+        for (Lavoratori lav : lavoratori){
+            lav.checkin();
+        }
     }
 }
