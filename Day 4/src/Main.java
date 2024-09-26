@@ -1,9 +1,6 @@
 import Esercizio1.Dipartimento;
 import Esercizio1.Dipendente;
-import Esercizio2.Dipendente2;
-import Esercizio2.DipendenteFullTime;
-import Esercizio2.DipendentePartTime;
-import Esercizio2.Dirigente;
+import Esercizio2.*;
 
 import java.util.ArrayList;
 
@@ -41,6 +38,8 @@ public class Main {
             tot += dip.getStipendio();
         }
         System.out.println("Il totale del salario dei dipendenti è di: " + tot + " Euro");
-
+        System.out.println("---------Esercizio 3----------");
+        Volontario vol1 = new Volontario("Mario Rossi", 18,"studente");
+        /*Volontario vol2 = new Volontario()*/
     }
 }

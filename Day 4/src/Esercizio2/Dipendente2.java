@@ -4,7 +4,7 @@ import Esercizio1.Dipartimento;
 
 import java.util.Random;
 
-public abstract class Dipendente2 {
+public abstract class Dipendente2 implements Lavoratori {
     private String matricola;
     protected double stipendio;
     private Dipartimento dipartimento;
@@ -31,7 +31,7 @@ public abstract class Dipendente2 {
     }
 
     public double calculateSalary(){
-        return 0;
+        return this.stipendio;
     }
 
     @Override

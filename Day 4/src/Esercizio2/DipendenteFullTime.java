@@ -22,4 +22,9 @@ public class DipendenteFullTime extends Dipendente2 {
     public String toString() {
         return "Il lavoratore full-time" + super.toString();
     }
+
+    @Override
+    public void checkin() {
+        System.out.println("Da dipendente fullTime inizio a lavorare alle 9.00");
+    }
 }

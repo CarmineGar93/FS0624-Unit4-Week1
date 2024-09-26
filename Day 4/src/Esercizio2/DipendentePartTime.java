@@ -24,4 +24,9 @@ public class DipendentePartTime  extends Dipendente2{
     public String toString() {
         return "Il lavoratore part-time" + super.toString();
     }
+
+    @Override
+    public void checkin() {
+        System.out.println("Da dipendente part-time inizio a lavorare alle 14.00");
+    }
 }

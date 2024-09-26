@@ -21,4 +21,9 @@ public class Dirigente extends Dipendente2{
     public String toString() {
         return "Il dirigente" + super.toString();
     }
+
+    @Override
+    public void checkin() {
+        System.out.println("Da dirigente inizio a lavorare quando mi pare e piace");
+    }
 }
